@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:${MONGODB_VERSION}
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongodb_storage:/data/db
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USERNAME} 
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_USERPASSWORD}
+
+volumes:
+  mongodb_storage:
