@@ -16,13 +16,13 @@ To build the application for the first time you must run the script
 make init
 ```
 
-#### Run command to start MongoDB:
+#### Command to start MongoDB:
 
 ```bash 
 $ make start
 ```
 
-#### Stop MongoDB
+#### Command to stop MongoDB:
 
 ```bash 
 $ make down
